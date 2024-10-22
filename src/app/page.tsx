@@ -13,14 +13,14 @@ export default function Home() {
     "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
   ] // array aonde eu armazeno os caracteres que irei usar para fazer a senha 
 
-  const gerador = () => { //função criada para gerar uma senha atraves do array de cima e armazenar ela em setSenha
-    let novaSenha = '' // aqui eu fiz um let
-    for(let x = 0; x <=11;x++){
-      const contador = Math.floor(Math.random()*caracteres.length)
-      novaSenha += caracteres[contador]
+  const gerador = () => { //função criada para gerar uma senha atraves do array de cima e armazenar ela em setSenha.
+    let novaSenha = '' // aqui eu fiz um let aonde será armazenado a senha.
+    for(let x = 0; x <=11;x++){ // aqui eu fiz um loop for que itera de 0 a 11 e contando de um em um.
+      const contador = Math.floor(Math.random()*caracteres.length) // aqui eu fiz uma constante contador que tem o Math.floor que retornara sempre arredonda o valor e depois eu peguei o math.random para pegar aleatoriamente os caracteres até o limite de length. 
+      novaSenha += caracteres[contador] //aqui to atribuindo o array caracteres que tem como contador seu novo array para novaSenha que antes estava vazia.
     }
 
-    setSenha(novaSenha)
+    setSenha(novaSenha) //e salvo a nova senha em setSenha.
   }
 
   return (
