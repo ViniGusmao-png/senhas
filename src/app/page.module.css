@@ -24,9 +24,6 @@
     font-size: 16px;
     font-weight: 500;
 }
-.button:hover{
-    background-color: rgb(226, 190, 255);
-}
 .text{
     font-size: 16px;
     font-weight: 700
@@ -44,4 +41,18 @@
 }
 .buttonM:after{
     background-color: green;
+}
+
+@media (min-width:320px) and (max-width: 767px) {
+
+    .main{ 
+    width: 55%;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1270px) {
+
+    .main{ 
+    width: 35%;
+    }
 }
